@@ -88,10 +88,10 @@ const handleSubmit = async(e)=>{
   
 
   //Here we'll be fetching data from the server ===>from AI response
-  const response = await fetch('https://alo-onkd.onrender.com', {
+  const response = await fetch("https://alo-onkd.onrender.com", {
     method:'POST',
     headers:{
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/json'
     },
     body:JSON.stringify({
       prompt:data.get('prompt')
