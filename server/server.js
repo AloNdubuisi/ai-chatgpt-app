@@ -39,7 +39,7 @@ const configuration = new Configuration({
             bot:response.data.choices[0].text
         })
     } catch (error) {
-        console.log(error)
+        console.error(error)
         res.status(500).send({error})
     }
   })

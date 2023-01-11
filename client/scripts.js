@@ -109,9 +109,9 @@ const handleSubmit = async(e)=>{
 
     typeText(messageDiv, parseData);
   }else{
-    const err = await response.text();
+    const error = await response.text();
     messageDiv.innerHTML = 'error! unable to fetch request';
-    alert(err);
+    alert(error);
   }
 }
 
