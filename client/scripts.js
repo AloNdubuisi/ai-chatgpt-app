@@ -88,7 +88,7 @@ const handleSubmit = async(e)=>{
   
 
   //Here we'll be fetching data from the server ===>from AI response
-  const response = await fetch('http://localhost:5000', {
+  const response = await fetch('https://alo-onkd.onrender.com', {
     method:'POST',
     headers:{
       'Content-Type': 'application/json'
@@ -110,7 +110,7 @@ const handleSubmit = async(e)=>{
     typeText(messageDiv, parseData);
   }else{
     const err = await response.text();
-    messageDiv.innerHTML = 'Wrong! unable to fetch request';
+    messageDiv.innerHTML = 'error! unable to fetch request';
     alert(err);
   }
 }
