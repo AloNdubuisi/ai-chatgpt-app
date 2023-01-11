@@ -6,7 +6,7 @@ const chatContainer = document.querySelector('#chat_container')
 
 let loadInterval;
 
-//CREATING THAT LOADS OUR MESSAGES:
+//CREATING Loader THAT LOADS OUR MESSAGES:
 function loader(element) {
   element.textContent = '';
 
@@ -91,7 +91,7 @@ const handleSubmit = async(e)=>{
   const response = await fetch('https://alo-onkd.onrender.com', {
     method:'POST',
     headers:{
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
     body:JSON.stringify({
       prompt:data.get('prompt')
